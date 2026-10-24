@@ -3,27 +3,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Gmail API App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Google Sheets integration with n8n for automated workflows.">
+  <title>Google Sheets Automation with n8n</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 24px;
+      line-height: 1.7;
+      color: #263238;
+      background: #f7f9fc;
+    }
+    main {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+    }
+    h1, h2 { color: #174ea6; }
+    a { color: #174ea6; }
+    footer {
+      margin-top: 35px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <h1>My Gmail API App</h1>
+<main>
+  <h1>Google Sheets Automation with n8n</h1>
 
   <p>
-    This application uses Google APIs to provide
-    its stated email-related functionality.
-    Users authorize access through Google OAuth.
+    This application enables users to connect Google Sheets
+    with n8n to automate spreadsheet-related tasks and
+    integrate Google Sheets into their workflows.
   </p>
 
+  <h2>What Does This Application Do?</h2>
   <p>
-    For support, contact:
+    The application uses Google OAuth 2.0 to authorize access
+    to Google services selected by the user. Authorized access
+    allows configured n8n workflows to interact with Google
+    Sheets according to the permissions granted.
+  </p>
+
+  <h2>How It Works</h2>
+  <p>
+    Users authorize Google access through Google's consent
+    screen. The resulting credentials are configured in n8n
+    and used to run the workflows that the user sets up.
+    Access is limited by the granted permissions and the
+    workflow configuration.
+  </p>
+
+  <h2>Privacy and Security</h2>
+  <p>
+    Google account access is authorized by the user.
+    Google data is handled according to the application's
+    intended functionality and the configured workflows.
+    Please review our Privacy Policy for details.
+  </p>
+
+  <h2>Contact and Support</h2>
+  <p>
+    For questions or support, contact:
     <a href="mailto:letstryoncemoretime@gmail.com">
       letstryoncemoretime@gmail.com
     </a>
   </p>
 
-  <p>
-    <a href="privacy.html">Privacy Policy</a>
-  </p>
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a>
+  </footer>
+</main>
 </body>
 </html>
