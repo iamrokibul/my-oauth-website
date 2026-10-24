@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - Google Sheets Automation with n8n</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 50px auto;
+      padding: 24px;
+      line-height: 1.8;
+      color: #263238;
+    }
+    h1, h2 { color: #174ea6; }
+    a { color: #174ea6; }
+    /*** Navbar Style ***/
+    
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 24px;
+  margin-bottom: 35px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #174ea6;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #174ea6;
+  color: #ffffff;
+  border-radius: 9px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  padding: 10px 13px;
+  color: #374151;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  background: #eff6ff;
+  color: #174ea6;
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none;
+  padding: 7px 11px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 8px;
+  color: #174ea6;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 14px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 4px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 12px;
+  }
+}
+    .nav-link.active {
+      background: #eff6ff;
+      color: #174ea6;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  
+<nav class="navbar">
+  <a href="./" class="logo">
+    <span class="logo-icon">G</span>
+    <span>Sheets Automation</span>
+  </a>
+
+  <button class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          onclick="toggleMenu()">
+    ☰
+  </button>
+
+  <div class="nav-links" id="navLinks">
+    <a href="./index.html" class="nav-link">Home</a>
+    <a href="./privacy.html" class="nav-link">Privacy Policy</a>
+    <a href="./terms.html" class="nav-link active">Terms of Service</a>
+  </div>
+</nav>
+
+  <h1>Terms of Service</h1>
+  <p>Last updated: October 24, 2026</p>
+
+  <p>
+    Welcome to Google Sheets Automation with n8n
+    ("the Application"). These Terms of Service govern
+    your use of the Application and its Google Sheets
+    integration features.
+  </p>
+
+  <h2>1. Purpose of the Application</h2>
+  <p>
+    The Application enables users to connect Google Sheets
+    with n8n and configure automated workflows using
+    Google OAuth authorization and the permissions granted
+    by the user.
+  </p>
+
+  <h2>2. User Responsibilities</h2>
+  <p>
+    You are responsible for your Google account, OAuth
+    credentials, workflow configurations, and the data
+    processed through your workflows. You must use the
+    Application lawfully and ensure that you have the
+    necessary rights and permissions to access and process
+    any data used in your workflows.
+  </p>
+
+  <h2>3. Google Account Authorization</h2>
+  <p>
+    Access to Google services requires your authorization.
+    You control the permissions you grant and may revoke
+    access through your Google Account settings.
+    Revoking authorization may interrupt workflows that
+    depend on Google services.
+  </p>
+
+  <h2>4. Acceptable Use</h2>
+  <p>
+    You must not use the Application to violate applicable
+    laws, access data without permission, distribute
+    malicious content, interfere with system security,
+    or misuse Google services or third-party platforms.
+  </p>
+
+  <h2>5. Third-Party Services</h2>
+  <p>
+    The Application may rely on Google APIs, n8n, and other
+    services configured in your workflows. Those services
+    are subject to their own terms and policies. We do not
+    control third-party services and cannot guarantee their
+    uninterrupted availability.
+  </p>
+
+  <h2>6. Data and Privacy</h2>
+  <p>
+    Your use of the Application is also subject to our
+    Privacy Policy, which explains how information may
+    be accessed, processed, stored, and shared.
+  </p>
+  <p>
+    <a href="./privacy.html">Read our Privacy Policy</a>
+  </p>
+
+  <h2>7. Availability and Changes</h2>
+  <p>
+    The Application and its features may be modified,
+    suspended, or discontinued when necessary. We do not
+    guarantee uninterrupted operation or that every
+    workflow will execute without errors.
+  </p>
+
+  <h2>8. Disclaimer</h2>
+  <p>
+    To the extent permitted by applicable law, the
+    Application is provided on an "as is" and "as available"
+    basis without guarantees of uninterrupted service,
+    accuracy, or suitability for a particular purpose.
+    You are responsible for checking the results of your
+    automated workflows.
+  </p>
+
+  <h2>9. Limitation of Liability</h2>
+  <p>
+    To the extent permitted by applicable law, we are not
+    liable for indirect or consequential losses arising
+    from the use of the Application, including workflow
+    interruptions or data-processing errors. Nothing in
+    these Terms excludes liability that cannot lawfully
+    be excluded.
+  </p>
+
+  <h2>10. Changes to These Terms</h2>
+  <p>
+    These Terms may be updated when the Application or
+    its requirements change. The latest version will
+    be published on this page.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+    For questions about these Terms, contact:
+    <a href="mailto:letstryoncemoretime@gmail.com">
+      letstryoncemoretime@gmail.com
+    </a>
+  </p>
+
+<!-- Custom JS for Navbar -->
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.querySelector(".menu-toggle");
+
+    const isOpen = navLinks.classList.toggle("show");
+    menuButton.setAttribute("aria-expanded", isOpen);
+  }
+</script>
+
+</body>
+</html>
